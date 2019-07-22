@@ -32,6 +32,15 @@ $primary-app-warn:    mat-palette($warn );
 $msa-theme:   mat-light-theme($primary-app-primary, $primary-app-accent,$primary-app-warn);
 
 
+msa-sidemenu{
+  $sidemenu-app-primary: mat-palette($primary , 400);
+  $sidemenu-app-accent:  mat-palette($accent , 900);
+  $sidemenu-app-warn:    mat-palette($warn );
+  $msa-sidemenu-theme:   mat-dark-theme($sidemenu-app-primary, $sidemenu-app-accent,$sidemenu-app-warn);
+  @include mat-list-theme($msa-sidemenu-theme);
+}
+
+
 @include angular-material-theme($msa-theme);
 //@include auth($cdk-theme);
 //@include round-progressbar($msa-theme);
