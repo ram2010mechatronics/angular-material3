@@ -34,6 +34,10 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     FlexLayoutModule,
     PerfectScrollbarModule
   ],
+  exports: [
+    SidebarComponent,
+    ToolbarComponent
+  ],
 
   providers: [
     {
