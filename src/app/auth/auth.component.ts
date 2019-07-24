@@ -8,6 +8,8 @@ import { MediaChange, MediaObserver } from '@angular/flex-layout';
 })
 export class AuthComponent implements OnInit {
 
+  constructor(private media: MediaObserver) { }
+
   @Input() isVisible = true;
   visibility = 'shown';
 
@@ -16,21 +18,20 @@ export class AuthComponent implements OnInit {
   matDrawerShow = true;
   sideNavMode = 'side';
 
+  static getRouteAnimation(outlet) {
+
+    return outlet.activatedRouteData.animation;
+    // return outlet.isActivated ? outlet.activatedRoute : ''
+  }
+
   ngOnChanges() {
     this.visibility = this.isVisible ? 'shown' : 'hidden';
   }
-
-  constructor(private media: MediaObserver) { }
 
   ngOnInit() {
     this.media.media$.subscribe((mediaChange: MediaChange) => {
       this.toggleView();
     });
-  }
-  getRouteAnimation(outlet) {
-
-    return outlet.activatedRouteData.animation;
-    // return outlet.isActivated ? outlet.activatedRoute : ''
   }
 
   toggleView() {

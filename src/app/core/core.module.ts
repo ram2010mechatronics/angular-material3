@@ -36,7 +36,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   ],
   exports: [
     SidebarComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SidemenuComponent
   ],
 
   providers: [

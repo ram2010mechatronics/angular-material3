@@ -42,7 +42,7 @@ msa-sidemenu{
 
 
 @include angular-material-theme($msa-theme);
-//@include auth($cdk-theme);
+@include auth($msa-theme);
 //@include round-progressbar($msa-theme);
 
 
