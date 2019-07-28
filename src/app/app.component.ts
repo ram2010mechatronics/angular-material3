@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-material3';
+
+  getRouteAnimation(outlet) {
+
+    return outlet.activatedRouteData.animation;
+  }
 }

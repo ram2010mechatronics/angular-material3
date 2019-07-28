@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { MatButtonModule, MatFormFieldModule, MatIconModule, MatRadioModule, MatToolbarModule, MatInputModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatRadioModule,
+  MatToolbarModule,
+  MatInputModule,
+  MatListModule, MatChipsModule
+} from '@angular/material';
 import { CoreRoutingModule } from './core-routing.module';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -32,12 +40,19 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     MatFormFieldModule,
     MatInputModule,
     FlexLayoutModule,
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+    MatListModule,
+    MatChipsModule
   ],
   exports: [
-    SidebarComponent,
+    SidemenuComponent,
+    SidemenuItemComponent,
+    ToolbarNotificationComponent,
     ToolbarComponent,
-    SidemenuComponent
+    SearchBarComponent,
+    FullscreenComponent,
+    SidebarComponent,
+    UserMenuComponent
   ],
 
   providers: [
