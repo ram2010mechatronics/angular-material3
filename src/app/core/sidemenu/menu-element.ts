@@ -229,13 +229,13 @@ export const menus = [
     ]
   }
   , {
-    name: 'Pages',
-    icon: 'content_copy',
+    name: 'Students',
+    icon: 'group',
     open: false,
     link: false,
     sub: [
       {
-        name: 'Login',
+        name: 'StudentList',
         icon: 'work',
         open: false,
         link: '../login',

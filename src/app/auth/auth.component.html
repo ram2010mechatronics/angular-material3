@@ -18,14 +18,10 @@
         <msa-sidemenu [iconOnly]="true"></msa-sidemenu>
       </mat-drawer>
       <mat-drawer-content style="overflow: hidden;">
-
         <msa-toolbar [sidenav]="sidenav" [drawer]="drawer" [sidebar]="sidenav2" [matDrawerShow]="matDrawerShow" style="z-index: 500"></msa-toolbar>
-
         <perfect-scrollbar  style="height: calc(100% - 33px);" >
           <router-outlet></router-outlet>
         </perfect-scrollbar>
-
-
       </mat-drawer-content>
     </mat-drawer-container>
   </mat-sidenav-content>

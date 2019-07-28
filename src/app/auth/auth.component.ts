@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit} from '@angular/core';
 import { MediaChange, MediaObserver } from '@angular/flex-layout';
 
 @Component({
@@ -6,7 +6,7 @@ import { MediaChange, MediaObserver } from '@angular/flex-layout';
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
-export class AuthComponent implements OnInit {
+export class AuthComponent implements OnInit, OnChanges {
 
   constructor(private media: MediaObserver) { }
 
