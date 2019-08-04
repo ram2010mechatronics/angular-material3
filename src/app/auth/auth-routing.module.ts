@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AuthComponent} from './auth.component';
+import { AuthComponent } from './auth.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
-    component: AuthComponent
-  }
-];
+    component: AuthComponent ,
+    children: [{ path: 'students', loadChildren: () => import('../students/students.module').then(mod => mod.StudentsModule) },]
+  }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -23,13 +23,16 @@ $mat-light-theme-background: (
 $primary : $mat-indigo;
 $accent  : $mat-orange;
 $warn    : $mat-red;
+$success : $mat-pink;
+
 
 
 
 $primary-app-primary: mat-palette($primary , 400);
 $primary-app-accent:  mat-palette($accent , 900);
 $primary-app-warn:    mat-palette($warn );
-$msa-theme:   mat-light-theme($primary-app-primary, $primary-app-accent,$primary-app-warn);
+$primary-app-success: mat-palette($success , 400);
+$msa-theme:   mat-light-theme($primary-app-primary, $primary-app-success, $primary-app-warn);
 
 
 msa-sidemenu{

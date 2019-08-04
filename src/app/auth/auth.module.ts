@@ -6,6 +6,7 @@ import {MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
 import {CoreModule} from '../core/core.module';
 
+
 @NgModule({
   declarations: [AuthComponent],
   imports: [
@@ -14,7 +15,8 @@ import {CoreModule} from '../core/core.module';
     MatSidenavModule,
     MatToolbarModule,
     PerfectScrollbarModule,
-    CoreModule
+    CoreModule,
+
   ]
 })
 export class AuthModule { }
