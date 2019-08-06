@@ -29,7 +29,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./students-list.component.scss']
 })
 export class StudentsListComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'actions'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(filterValue: string) {

@@ -9,7 +9,9 @@ import {
   MatFormFieldModule,
   MatInputModule, MatPaginatorModule,
   MatTableModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatIconModule,
+  MatTooltipModule,
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
@@ -27,7 +29,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatInputModule,
     MatCheckboxModule,
     MatPaginatorModule,
-    MatChipsModule
+    MatChipsModule,
+    MatIconModule,
+    MatTooltipModule
   ]
 })
 export class StudentsModule { }
