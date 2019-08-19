@@ -5,7 +5,9 @@
       <h1 class="mat-headline center-align" >Students List</h1>
       <span class="spacer"></span>
       <mat-chip-list>
-        <mat-chip color="accent" selected>AddNew</mat-chip>
+        <mat-chip color="warn" selected>AddNew
+          <mat-icon matChipRemove >add</mat-icon>
+        </mat-chip>
       </mat-chip-list>
     </mat-toolbar>
     <div class="table-container">
@@ -42,7 +44,7 @@
         <ng-container matColumnDef="actions">
           <th mat-header-cell *matHeaderCellDef>Actions </th>
           <td mat-cell *matCellDef="let row">
-              <button mat-icon-button matTooltip="Click to View" class="iconbutton" color="Info">
+              <button mat-icon-button matTooltip="Click to View" class="iconbutton" color="accent">
                   <mat-icon aria-label="View">visibility</mat-icon>
                 </button>
             <button mat-icon-button matTooltip="Click to Edit" class="iconbutton" color="primary">

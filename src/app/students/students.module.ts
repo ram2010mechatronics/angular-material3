@@ -5,18 +5,33 @@ import { StudentsRoutingModule } from './students-routing.module';
 import { StudentsListComponent } from './students-list/students-list.component';
 import { EnrollmentComponent } from './enrollment/enrollment.component';
 import {
-  MatCheckboxModule, MatChipsModule,
+  MatButtonModule,
+  MatCheckboxModule,
+  MatChipsModule,
   MatFormFieldModule,
-  MatInputModule, MatPaginatorModule,
+  MatInputModule,
+  MatPaginatorModule,
   MatTableModule,
   MatToolbarModule,
   MatIconModule,
   MatTooltipModule,
+  MatCardModule,
+  MatGridListModule,
+  MatDatepickerModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatNativeDateModule,
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {BasicDetailsComponent} from './basic-details/basic-details.component';
+import {AddressDetailsComponent} from './address-details/address-details.component';
+import {GuardianDetailsComponent} from './guardian-details/guardian-details.component';
+import {ContactDetailsComponent} from './contact-details/contact-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [StudentsListComponent, EnrollmentComponent],
+  declarations: [StudentsListComponent, EnrollmentComponent, BasicDetailsComponent,
+    AddressDetailsComponent, GuardianDetailsComponent, ContactDetailsComponent],
   imports: [
     CommonModule,
     StudentsRoutingModule,
@@ -31,7 +46,15 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatPaginatorModule,
     MatChipsModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule,
+    MatGridListModule,
+    MatDatepickerModule,
+    MatRadioModule,
+    MatSelectModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    MatButtonModule,
   ]
 })
 export class StudentsModule { }
