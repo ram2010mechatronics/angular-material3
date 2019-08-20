@@ -28,10 +28,11 @@ import {AddressDetailsComponent} from './address-details/address-details.compone
 import {GuardianDetailsComponent} from './guardian-details/guardian-details.component';
 import {ContactDetailsComponent} from './contact-details/contact-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AcademicInfoComponent } from './academic-info/academic-info.component';
 
 @NgModule({
   declarations: [StudentsListComponent, EnrollmentComponent, BasicDetailsComponent,
-    AddressDetailsComponent, GuardianDetailsComponent, ContactDetailsComponent],
+    AddressDetailsComponent, GuardianDetailsComponent, ContactDetailsComponent, AcademicInfoComponent],
   imports: [
     CommonModule,
     StudentsRoutingModule,
