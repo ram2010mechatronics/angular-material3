@@ -1,5 +1,5 @@
 <mat-card class="student-registration-card" fxLayout="column" fxLayout.lt-sm="column" fxLayoutGap="32px">
-  <mat-card fxLayoutAlign="space-evenly stretch">
+  <!-- <mat-card fxLayoutAlign="space-evenly stretch">
     <mat-card-content>
       <div class="student-registration-container">
         <form class="student-reg-container" [formGroup]="options">
@@ -14,8 +14,9 @@
         </form>
       </div>
     </mat-card-content>
-  </mat-card>
+  </mat-card> -->
   <mat-card-content *ngFor="let _ of [1]" fxLayout="column" fxLayout.lt-sm="column" fxLayoutGap="32px">
+    <msa-academic-info fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" fxLayoutAlign="space-evenly stretch"></msa-academic-info>
     <msa-basic-details fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" fxLayoutAlign="space-evenly stretch" [disableStudentId]="disableStudentId"></msa-basic-details>
     <msa-guardian-details fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" fxLayoutAlign="space-evenly stretch"></msa-guardian-details>
     <msa-address-details fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%" fxLayoutAlign="space-evenly stretch"></msa-address-details>

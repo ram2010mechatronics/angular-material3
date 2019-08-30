@@ -5,12 +5,9 @@
       <mat-grid-list cols="3" rowHeight="340px">
         <mat-grid-tile>
           <div class="controles-container">
-            <mat-form-field>
+            <!-- <mat-form-field>
               <input formControlName="srNo" matInput placeholder="StudentRecordNumber" [readonly]="disableStudentId">
 
-              <!-- <button mat-icon-button matSuffix color="accent" [disabled]="disableStudentId" (click)="onClear()">
-                    <mat-icon style="cursor: pointer;" >search</mat-icon>
-              </button> -->
               <button type="button" mat-icon-button matSuffix color="warn" [disabled]="disableStudentId" (click)="update()">
                 <mat-icon class="mat-18">search</mat-icon>
               </button>
@@ -30,7 +27,7 @@
                   {{section.viewValue}}
                 </mat-option>
               </mat-select>
-            </mat-form-field>
+            </mat-form-field> -->
             <mat-form-field>
               <input formControlName="firstName" matInput placeholder="First Name*">
             </mat-form-field>
@@ -40,21 +37,16 @@
             <mat-form-field>
               <input formControlName="lastName" matInput placeholder="Last Name">
             </mat-form-field>
-          </div>
-        </mat-grid-tile>
-        <mat-grid-tile>
-          <div class="controles-container">
-            <!-- <mat-form-field>
-                <input formControlName="dateofBirth" matInput [matDatepicker]="picker" placeholder="Date of birth"  [value]="date.value">
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker touchUi="true" #picker></mat-datepicker>
-            </mat-form-field> -->
             <mat-form-field>
               <input formControlName="dateofBirth" matInput [matDatepicker]="picker" placeholder="Date of birth">
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
-            <div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="controles-container">
+            <div class="add-bottom-padding">
               <label>Gender: </label>
               <mat-radio-group formControlName="gender">
                 <mat-radio-button value="M">Male</mat-radio-button>
